@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/myimage.png" sizes="any" />
+        <link rel="icon" href="/mylogo.png" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

@@ -178,14 +178,14 @@ export const workExperience = [
     title: "Software Engineer @IFS",
     desc: `Experienced Software Engineer specializing in enterprise-grade aviation maintenance and ERP systems, with strong expertise in IFS Aviation, Java, PL/SQL, and cloud-native technologies. Proven track record in delivering and enhancing Line and Hangar Maintenance solutions, implementing complex labour management and skill validation features across web and mobile platforms, and integrating third-party supply chain systems. Adept at improving mobile performance in low-connectivity environments, designing robust task model integrations, and collaborating with cross-functional stakeholders to deliver stable, on-time solutions while providing high-priority production support.`,
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/ifslogo.png",
   },
   {
     id: 2,
     title: "Trainee Software Engineer @Pristine Solutions",
     desc: "Full-stack developer with hands-on experience in building and enhancing enterprise web applications using Angular, Node.js, C#, .NET, SAP HANA, and SAP HANA XS JavaScript (XSJS). Actively collaborated with cross-functional development teams to deliver feature enhancements and worked closely with Sri Lankan clients to gather requirements and implement custom solutions. Contributed to multiple projects, including Harcourts Web, Domex, and TPL Web, delivering reliable and scalable business applications.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/pristinelogo.jpg",
   },
 ];
 

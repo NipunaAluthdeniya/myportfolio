@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { FiDownload } from "react-icons/fi";
@@ -197,9 +198,10 @@ export const BentoGridItem = ({
           {id === 5 && (
             <div className="mt-5 relative">
               <a
-                href="/api/download-cv"
+                href="/Nipuna_Aluthdeniya_SE.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                download
                 className="inline-block"
               >
                 <MagicButton

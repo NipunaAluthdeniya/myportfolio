@@ -79,10 +79,6 @@ npm run deploy
 
 Contributions are welcome — open an issue or submit a PR. Please follow existing code style and ensure TypeScript types and linting rules pass.
 
-## License
-
-This repository does not include an explicit license. Add a `LICENSE` file if you wish to define one.
-
 ## Contact
 
 If you'd like help or want to collaborate, open an issue or contact the owner via the links on the site.

@@ -3,8 +3,9 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { FiDownload } from "react-icons/fi";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+// Load react-lottie dynamically to avoid server-side document access during build
+import dynamic from "next/dynamic";
+const Lottie: any = dynamic(() => import("react-lottie").then((mod) => mod.default), { ssr: false });
 
 import { cn } from "@/lib/utils";
 

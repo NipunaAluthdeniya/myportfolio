@@ -17,7 +17,6 @@ A personal portfolio built with Next.js (App Router), React, Tailwind CSS and Th
 - TypeScript
 - Tailwind CSS
 - Three.js, @react-three/fiber, three-globe
-- Sentry for error tracking
 
 ## Getting Started
 
@@ -73,7 +72,6 @@ npm run deploy
 ## Configuration
 
 - Tailwind is configured in `tailwind.config.ts`.
-- Sentry configuration files live at `sentry.client.config.ts`, `sentry.server.config.ts`, and `sentry.edge.config.ts`.
 
 ## Contributing
 

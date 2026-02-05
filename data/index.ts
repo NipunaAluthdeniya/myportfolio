@@ -14,7 +14,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/teamwork.jpg",
+    img: "/teamwork.png",
     spareImg: "",
   },
   {
@@ -106,6 +106,23 @@ export const projects = [
   },
 ];
 
+export const publications = [
+  {
+    id: 1,
+    title: "Centralized and Labeled Academic Journal Library Using Machine Learning & Deep Learning Approaches",
+    source: "ieeexplore.ieee.org",
+    thumbnail: "/ieee.png",
+    link: "https://ieeexplore.ieee.org/document/10544300",
+  },
+  {
+    id: 2,
+    title: "Layout Aware Research Paper Parsing and Draft Research Paper Layout-Error Detection Using NLP and Rule-based Techniques",
+    source: "ieeexplore.ieee.org",
+    thumbnail: "/ieee.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10857771",
+  }
+];
+
 export const testimonials = [
   {
     quote:
@@ -176,16 +193,18 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer @IFS",
-    desc: `Experienced Software Engineer specializing in enterprise-grade aviation maintenance and ERP systems, with strong expertise in IFS Aviation, Java, PL/SQL, and cloud-native technologies. Proven track record in delivering and enhancing Line and Hangar Maintenance solutions, implementing complex labour management and skill validation features across web and mobile platforms, and integrating third-party supply chain systems. Adept at improving mobile performance in low-connectivity environments, designing robust task model integrations, and collaborating with cross-functional stakeholders to deliver stable, on-time solutions while providing high-priority production support.`,
+    desc: `Experienced software engineer with strong expertise in Java EE, PL/SQL, React.js, RESTful APIs, and micro-frontend architectures, delivering enterprise-grade aviation maintenance solutions. Developed and enhanced Line and Hangar Maintenance modules within the Maintenance Execution domain, supporting real-world airline operations. Built event-driven frontend components using React.js and implemented backend business logic through Java-based APIs and PL/SQL, along with secure integrations between IFS Supply Chain and third-party systems. Designed and implemented synchronous and asynchronous communication mechanisms, aviation task models using object-oriented principles, and complex workflows such as labor hour tracking, skill validation, and bulk sign-off across web and mobile platforms. Supported end-to-end delivery through CI/CD pipelines using Bitbucket, Docker, and AWS, provided production support by resolving critical defects, and collaborated with business stakeholders, QA teams, and architects while mentoring junior developers and interns.`,
     className: "md:col-span-2",
     thumbnail: "/ifslogo.png",
+    technologies: ["Java EE", "PL/SQL", "React.js", "RESTful APIs", "Docker", "AWS"],
   },
   {
     id: 2,
     title: "Trainee Software Engineer @Pristine Solutions",
-    desc: "Full-stack developer with hands-on experience in building and enhancing enterprise web applications using Angular, Node.js, C#, .NET, SAP HANA, and SAP HANA XS JavaScript (XSJS). Actively collaborated with cross-functional development teams to deliver feature enhancements and worked closely with Sri Lankan clients to gather requirements and implement custom solutions. Contributed to multiple projects, including Harcourts Web, Domex, and TPL Web, delivering reliable and scalable business applications.",
+    desc: "Full-stack developer with hands-on experience in building and enhancing enterprise web applications using Angular, React.js, Node.js, C#, .NET, SAP HANA, and SAP HANA XS JavaScript (XSJS). Actively collaborated with cross-functional development teams to deliver feature enhancements and worked closely with Sri Lankan clients to gather requirements and implement custom solutions. Contributed to multiple projects, including Harcourts Web, Domex, and TPL Web, delivering reliable and scalable business applications.",
     className: "md:col-span-2",
     thumbnail: "/pristinelogo.jpg",
+    technologies: ["Angular", "React.js", "Node.js", "C#", ".NET", "SAP HANA", "XSJS"],
   },
 ];
 

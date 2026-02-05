@@ -1,79 +1,45 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
-import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
+import { publications } from "@/data";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="publications">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        My{" "}
+        <span className="text-purple">Publications</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+      <div className="flex flex-col items-center justify-center gap-8 mt-10 max-w-4xl mx-auto px-4">
+        {publications.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
             key={item.id}
+            className="w-full group cursor-pointer block"
+            style={{ position: "relative", zIndex: 10 }}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
+            <div className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-2xl bg-[#0c1225] hover:bg-[#131a36] transition-all duration-300 border border-white/[0.1] hover:border-purple/50 pointer-events-none">
+              {/* Thumbnail */}
+              <div className="flex-shrink-0 w-32 h-32 sm:w-36 sm:h-36 rounded-xl overflow-hidden bg-white flex items-center justify-center p-4">
                 <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  src={item.thumbnail}
+                  alt={item.source}
+                  className="w-full h-full object-contain"
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+              {/* Content */}
+              <div className="flex-1 text-center sm:text-left">
+                <h2 className="font-bold text-lg sm:text-xl lg:text-2xl text-white group-hover:text-purple transition-colors duration-300 leading-tight">
+                  {item.title}
+                </h2>
+                <p className="mt-3 text-sm sm:text-base text-[#8a8fa3]">
+                  {item.source}
+                </p>
               </div>
-            </PinContainer>
-          </div>
+            </div>
+          </a>
         ))}
       </div>
     </div>

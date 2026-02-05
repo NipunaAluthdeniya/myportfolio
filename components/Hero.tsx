@@ -56,10 +56,21 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hello, I&apos;m Nipuna Aluthdeniya, a Software Engineer with
-            experience in building and maintaining software solutions.
-          </p>
+          <div className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl max-w-4xl">
+            <p>
+              Hello, I&apos;m <span className="text-purple font-semibold">Nipuna Aluthdeniya</span>, a Software Engineer with
+              experience in building and maintaining software solutions.
+            </p>
+            <p className="mt-4">
+              Throughout my journey as a developer, I have worked across multiple frontend frameworks including <span className="text-purple">React.js</span>, <span className="text-purple">React TypeScript</span>, <span className="text-purple">Next.js</span>, and <span className="text-purple">Angular</span>, consistently delivering high-quality solutions that meet client expectations. I also bring hands-on experience with backend technologies such as <span className="text-purple">Node.js</span>, <span className="text-purple">.NET</span>, and <span className="text-purple">Spring Boot</span>, enabling me to contribute effectively across the full stack. My experience spans both independent work and collaborative team environments, highlighting my adaptability and strong communication skills.
+            </p>
+            <p className="mt-4">
+              Currently, I am a Software Engineer with over <span className="text-purple">2 years of professional experience</span>, and I am open to opportunities that challenge me, expand my skill set, and allow me to maximize my potential.
+            </p>
+            <p className="mt-4">
+              Outside of work, I enjoy traveling with friends and staying active at the gym, which helps me maintain balance and motivation.
+            </p>
+          </div>
 
           {/* <a href="#about">
             <MagicButton

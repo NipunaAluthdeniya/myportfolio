@@ -46,6 +46,14 @@ const Hero = () => {
             Dynamic Web App Powered by Next.js
           </p>
 
+          <div className="mt-8 mb-8">
+            <img
+              src="/PortfolioImage.jpg"
+              alt="Portfolio"
+              className="w-80 h-80 rounded-full border-2 border-purple/50 shadow-lg"
+            />
+          </div>
+
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *

@@ -49,9 +49,9 @@ const Footer = () => {
             >
               <img
                 src={info.img}
-                alt={`${info.name} icon`}
+                alt={`${info.name} icon`} 
                 width={20}
-                height={20}
+                height={10}
               />
             </a>
           ))}

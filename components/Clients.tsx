@@ -11,14 +11,14 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-40">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-48 md:gap-10 lg:gap-12 p-6 mt-40 max-w-6xl mx-auto">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-full w-[90vw] max-w-2xl"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full"
             key={item.id}
           >
-            <div className="relative flex flex-col items-center justify-center sm:w-full w-[90vw] max-w-2xl rounded-2xl border border-white/[0.1] bg-opacity-10 bg-black p-6">
-              <div className="relative flex items-center justify-center sm:w-full w-[90vw] max-w-2xl overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+            <div className="relative flex flex-col items-center justify-center w-full rounded-2xl border border-white/[0.1] bg-opacity-10 bg-black p-6">
+              <div className="relative flex items-center justify-center w-full overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -45,7 +45,7 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex flex-col items-center gap-4 w-full mt-7 mb-3">
+              <div className="flex flex-col items-center gap-4 w-full mt-16 mb-6">
                 <div className="flex items-center justify-center gap-3">
                   {item.frontendLink && (
                     <a
@@ -71,12 +71,12 @@ const RecentProjects = () => {
                   )}
                 </div>
                 
-                <div className="flex items-center justify-between w-full">
+                <div className="flex flex-col md:flex-row items-center justify-center md:justify-between w-full gap-4">
                   <div className="flex items-center">
                     {item.iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}

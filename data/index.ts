@@ -196,19 +196,27 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
+    title: "Software Engineer @Exam Genius FZCO",
+    desc: "Software engineer at Exam Genius (FZCO) with hands-on expertise in Vue 3, Laravel, MySQL, REST APIs, Auth0, and AWS S3, currently delivering a scalable LMS Student Portal for the THESSA platform. Developing the Core Shell, Class Experience, and Authentication modules, along with foundational Cross-Cutting Concerns (design token system, Axios HTTP client, error boundaries, empty and loading states) that power every feature across the portal. Implemented secure authentication flows using Auth0 with Laravel Sanctum, XSS-safe Vuex token storage, CSRF handshake, and session keepalive, alongside a centralized Axios client with global interceptors for silent 401 re-auth, 429 backoff, offline detection, and upload progress tracking. Engineered a self-hosted video learning experience using Video.js with S3 signed-URL streaming, resume playback, completion tracking, bookmarks, and in-lesson notes, plus a responsive App Shell with collapsible sidebar, route-aware highlighting, and a Class → Subject → Module hierarchy. Accelerated delivery by integrating AI-assisted tools (Claude, OpenAI Codex, GitHub Copilot) for scaffolding and code review, while collaborating with backend, QA, and product stakeholders in an Agile workflow.",
+    className: "md:col-span-2",
+    thumbnail: "/EG.png",
+    technologies: ["Vue.js", "Laravel", "MySQL", "AWS"],
+  },
+  {
+    id: 2,
     title: "Software Engineer @IFS",
     desc: `Experienced software engineer with strong expertise in Java EE, PL/SQL, React.js, RESTful APIs, and micro-frontend architectures, delivering enterprise-grade aviation maintenance solutions. Developed and enhanced Line and Hangar Maintenance modules within the Maintenance Execution domain, supporting real-world airline operations. Built event-driven frontend components using React.js and implemented backend business logic through Java-based APIs and PL/SQL, along with secure integrations between IFS Supply Chain and third-party systems. Designed and implemented synchronous and asynchronous communication mechanisms, aviation task models using object-oriented principles, and complex workflows such as labor hour tracking, skill validation, and bulk sign-off across web and mobile platforms. Supported end-to-end delivery through CI/CD pipelines using Bitbucket, Docker, and AWS, provided production support by resolving critical defects, and collaborated with business stakeholders, QA teams, and architects while mentoring junior developers and interns.`,
     className: "md:col-span-2",
     thumbnail: "/ifslogo.png",
-    technologies: ["Java EE", "PL/SQL", "React.js", "RESTful APIs", "Docker", "AWS"],
+    technologies: ["Java EE", "PL/SQL", "React.js", "RESTful APIs"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Trainee Software Engineer @Pristine Solutions",
     desc: "Full-stack developer with hands-on experience in building and enhancing enterprise web applications using Angular, React.js, Node.js, C#, .NET, SAP HANA, and SAP HANA XS JavaScript (XSJS). Actively collaborated with cross-functional development teams to deliver feature enhancements and worked closely with Sri Lankan clients to gather requirements and implement custom solutions. Contributed to multiple projects, including Harcourts Web, Domex, and TPL Web, delivering reliable and scalable business applications.",
     className: "md:col-span-2",
     thumbnail: "/pristinelogo.jpg",
-    technologies: ["Angular", "React.js", "Node.js", "C#", ".NET", "SAP HANA", "XSJS"],
+    technologies: ["Angular", "Node.js", "SAP HANA", "XSJS"],
   },
 ];
 
